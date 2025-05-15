@@ -13,11 +13,18 @@ export default function Footer() {
                 </div>
                 <div className={styles.contact_item}>
                     <FaEnvelope className={styles.contact_icon}/>
-                    <span>selagagefrancois@gmail.com</span>
+                    <a href="mailto:selagagefrancois@gmail.com"
+                    className={styles.contact_link}>
+                        selagagefrancois@gmail.com
+                    </a>
                 </div>
                 <div className={styles.contact_item}>
                     <FaFacebookF className={styles.contact_icon}/>
-                    <span>François Catellier</span>
+                    <a href="https://www.facebook.com/profile.php?id=100006892575157"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.contact_link}>
+                    François Catellier</a>
                 </div>
             </div>
 

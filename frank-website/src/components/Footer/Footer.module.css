@@ -84,6 +84,18 @@
     line-height: 1.4;
 }
 
+/* remove all default link styling & hover effects */
+.contact_link {
+    color: inherit;          /* keep the same text color */
+    text-decoration: none;   /* no underline */
+  }
+  .contact_link:hover,
+  .contact_link:focus {
+    color: inherit;          /* no color change on hover/focus */
+    text-decoration: none;   /* no underline on hover/focus */
+    outline: none;           /* if you really want zero focus outline */
+  }
+
 /* MOBILE: stack and center on small screens under 600px */
 @media (max-width: 600px) {
     .footer {
@@ -97,10 +109,14 @@
     .footer_services {
         flex: none;
         width: 100%;
-        font-size: 1.25rem;
+        font-size: 1.3em;
         padding-left: 0;
         max-width: 400px;
         margin-bottom: 1.5rem;
+    }
+
+    .footer_contact {
+        padding-top: 1.25em;
     }
 
     /* center contact items on mobile */
@@ -113,7 +129,7 @@
     }
 
     .contact_icon {
-        font-size: clamp(1.25rem, 2vw, 1.25rem);
+        font-size: clamp(1.3rem, 2vw, 1.25rem);
         padding-right: .5rem;
     }
 }
