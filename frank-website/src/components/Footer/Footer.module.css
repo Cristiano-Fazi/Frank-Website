@@ -1,0 +1,119 @@
+/* Footer.module.css */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(1rem, 4vw, 2rem);
+    background-color: #111;
+    color: #eee;
+    padding: 1rem 2rem 2.5rem;
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.footer_contact,
+.footer_logo,
+.footer_services {
+    display: flex;
+    font-size: 2.5rem;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_contact { /*To overide the flex*/
+    flex: 2 1 clamp(240px, 40%, 1000px);
+    padding-left: 0.5rem;
+}
+
+.footer_logo {
+    flex: 1.5 1 clamp(240, 30%, 360px);
+    padding-left: 2rem;
+}
+
+.footer_services {
+    flex: 0.25 1 clamp(240px, 20%, 360px);
+    padding-left: 4rem;
+}
+
+/* Center column logo adjustments */
+.footer_logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer_logo_image {
+    /* fluid logo size: min 150px, ideal 30vw, max 250px */
+    width: clamp(150px, 30vw, 250px);
+    height: 16rem;
+    width: 21.76rem; /* I know 20.4 looks arbitrary but the logo hasa ratio of 1 to 1.36 so it needs to be like this */
+}
+.footer_logo_subtitle {
+    font-size: clamp(1.5rem, 1.5vw, 1rem);
+    color: #ccc;
+    margin: 0;
+}
+
+/* Contact & services lists */
+.contact_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    /* default left-justify on desktop */
+    justify-content: flex-start;
+}
+.contact_icon {
+    font-size: clamp(2.5rem, 2vw, 2.75rem);
+    margin-right: 0.5rem;
+    color: #8bc34a;
+    padding-right: 1.5rem;
+}
+.services_title {
+    font-size: clamp(2rem, 2vw, 1.1rem);
+    margin-bottom: 0.75rem;
+    color: #8bc34a;
+}
+.services_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1.75rem;
+}
+.services_list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* MOBILE: stack and center on small screens under 600px */
+@media (max-width: 600px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer_contact,
+    .footer_logo,
+    .footer_services {
+        flex: none;
+        width: 100%;
+        font-size: 1.25rem;
+        padding-left: 0;
+        max-width: 400px;
+        margin-bottom: 1.5rem;
+    }
+
+    /* center contact items on mobile */
+    .contact_item {
+        justify-content: center;
+    }
+    .footer_contact,
+    .footer_services {
+        align-items: center;
+    }
+
+    .contact_icon {
+        font-size: clamp(1.25rem, 2vw, 1.25rem);
+        padding-right: .5rem;
+    }
+}
