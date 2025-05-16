@@ -34,7 +34,7 @@
 
 .footer_services {
     flex: 0.25 1 clamp(100px, 20%, 360px);
-    padding-left: (0.5rem, 4rem, 4rem)
+    padding-left: (0.1rem, 4rem, 10rem)
 }
 
 /* Center column logo adjustments */
@@ -107,7 +107,7 @@
     .footer_services {
         flex: none;
         width: 100%;
-        font-size: clamp(1.3rem, 2.25vw, 2.25rem);
+        font-size: clamp(1.3rem, 4.5vw, 5rem);
         padding-left: 0;
         max-width: 400px;
         margin-bottom: 1.5rem;
@@ -127,15 +127,22 @@
     }
 
     .contact_icon {
-        font-size: clamp(1.3rem, 2vw, 1.25rem);
+        font-size: clamp(1.3rem, 4.5vw, 5rem);
         padding-right: .5rem;
     }
 
+    .services_title {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
     .services_list {
         font-size: clamp(1.3rem, 6vw, 2.5rem);
     }
 
     .footer_logo_image {
-        width: clamp(240px, 30vw, 300px);
+        width: clamp(240px, 70vw, 1000px);
+    }
+
+    .footer_logo_subtitle {
+        font-size: clamp(1.25rem, 3.5vw, 2.5rem);
     }
 }
