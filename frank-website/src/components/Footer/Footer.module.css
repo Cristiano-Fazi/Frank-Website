@@ -14,60 +14,46 @@
 }
 
 .footer_contact,
-.footer_logo {
+.footer_logo,
+.footer_services {
     display: flex;
     font-size: clamp(0.5rem, 2.5vw, 2.5rem);
     flex-direction: column;
     justify-content: center;
-}
-
-.footer_services_content{
-    text-align: left; /* Left-align the text inside */
-    display: flex;
-    flex-direction: column;
 }
 
 .footer_services {
-    display: flex;
     align-items: flex-end;
-    font-size: clamp(0.5rem, 2.5vw, 2.5rem);
     padding-right: clamp(10px, 5vw, 300px);
-    flex-direction: column;
-    justify-content: center;
+    flex: 0.25 1 clamp(25px, 12.5%, 360px);
 }
 
-.footer_contact { /*To overide the flex*/
+.footer_services_content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact {
     flex: 1.75 1 clamp(75px, 20%, 1000px);
 }
 
 .footer_logo {
-    flex: 1.5 1 clamp(75px, 20%, 360px);
-    /* padding-left: clamp(10px, 2vw, 2rem) */
-}
-
-.footer_services {
-    flex: 0.25 1 clamp(25px, 12.5%, 360px);
-}
-
-/* Center column logo adjustments */
-.footer_logo {
-    display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex: 1.5 1 clamp(75px, 20%, 360px);
     padding-right: clamp(10px, 2vw, 300px);
 }
+
 .footer_logo_image {
-    width: calc(100px + (50vw) * 0.275)
-    /* width: clamp(100px, 30vw, 400px); */
+    width: calc(100px + (50vw) * 0.275);
 }
+
 .footer_logo_subtitle {
     font-size: clamp(0.75rem, 1.5vw, 1.5rem);
     color: #ccc;
     margin: 0;
 }
 
-/* Contact & services lists */
 .contact_item {
     display: flex;
     align-items: center;
@@ -77,8 +63,9 @@
 .contact_icon {
     font-size: clamp(1.5rem, 2vw, 2.75rem);
     color: #8bc34a;
-    padding-right: clamp(10px, 1.5vw, 2rem);;
+    padding-right: clamp(10px, 1.5vw, 2rem);
 }
+
 .services_title {
     font-size: clamp(1rem, 3vw, 2rem);
     margin-bottom: 0.75rem;
@@ -95,7 +82,7 @@
     line-height: 1.4;
 }
 
-/* remove all default link styling & hover effects */
+/* Removes styling and hover effects for the links */
 .contact_link {
     color: inherit;
     text-decoration: none;
@@ -135,10 +122,10 @@
     .contact_item {
         justify-content: center;
     }
+
     .footer_contact,
     .footer_services {
         align-items: center;
-        padding-right: 0;
     }
 
     .contact_icon {
