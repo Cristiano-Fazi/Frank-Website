@@ -14,10 +14,24 @@
 }
 
 .footer_contact,
-.footer_logo,
-.footer_services {
+.footer_logo {
     display: flex;
     font-size: clamp(0.5rem, 2.5vw, 2.5rem);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_services_content{
+    text-align: left; /* Left-align the text inside */
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_services {
+    display: flex;
+    align-items: flex-end;
+    font-size: clamp(0.5rem, 2.5vw, 2.5rem);
+    padding-right: 7.5rem;
     flex-direction: column;
     justify-content: center;
 }
@@ -33,7 +47,7 @@
 
 .footer_services {
     flex: 0.25 1 clamp(100px, 20%, 360px);
-    padding-left: (0.1rem, 4rem, 10rem)
+    padding-left: (10px, 4rem, 10rem)
 }
 
 /* Center column logo adjustments */
@@ -100,6 +114,7 @@
         flex-direction: column;
         align-items: center;
         text-align: center;
+        padding-left: 0;
     }
 
     .footer_contact,
@@ -111,6 +126,7 @@
         padding-left: 0;
         max-width: 400px;
         margin-bottom: 1.5rem;
+        padding-right: 0;
     }
 
     .footer_contact {
@@ -123,11 +139,17 @@
     .footer_contact,
     .footer_services {
         align-items: center;
+        padding-right: 0;
     }
 
     .contact_icon {
         font-size: clamp(1.3rem, 4.5vw, 5rem);
         padding-right: .5rem;
+    }
+
+    .footer_services_content {
+        text-align: center;
+        padding-left: 0;
     }
 
     .services_title {

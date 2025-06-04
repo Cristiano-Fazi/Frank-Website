@@ -42,15 +42,17 @@ export default function Footer() {
 
             {/* Right Column */}
             <div className={styles.footer_services}>
-                <h3 className={styles.services_title}>Services</h3>
-                <ul className={styles.services_list}>
-                    <li>Abattage</li>
-                    <li>Déboisement</li>
-                    <li>Essouchement</li>
-                    <li>Haubanage</li>
-                    <li>Taille de haie</li>
-                    <li>Élague</li>
-                </ul>
+                <div className={styles.footer_services_content}>
+                    <h3 className={styles.services_title}>Services</h3>
+                    <ul className={styles.services_list}>
+                        <li>Abattage</li>
+                        <li>Déboisement</li>
+                        <li>Essouchement</li>
+                        <li>Haubanage</li>
+                        <li>Taille de haie</li>
+                        <li>Élague</li>
+                    </ul>
+                </div>
             </div>
         </footer>
     )
