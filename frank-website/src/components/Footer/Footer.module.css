@@ -1,0 +1,155 @@
+/* Footer.module.css */
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0.5rem, 4vw, 2rem);
+    background-color: #111;
+    color: #eee;
+    padding-top: 1rem;
+    padding-bottom: 2.5rem;
+    padding-left: clamp(0.25rem, 3vw, 2rem);
+    font-family: sans-serif;
+    text-align: left;
+}
+
+.footer_contact,
+.footer_logo,
+.footer_services {
+    display: flex;
+    font-size: clamp(0.5rem, 2.5vw, 2.5rem);
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer_services {
+    align-items: flex-end;
+    padding-right: clamp(10px, 5vw, 300px);
+    flex: 0.25 1 clamp(25px, 12.5%, 360px);
+}
+
+.footer_services_content{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_contact {
+    flex: 1.75 1 clamp(75px, 20%, 1000px);
+}
+
+.footer_logo {
+    align-items: center;
+    flex: 1.5 1 clamp(75px, 20%, 360px);
+    padding-right: clamp(10px, 2vw, 300px);
+}
+
+.footer_logo_image {
+    width: calc(100px + (50vw) * 0.275);
+}
+
+.footer_logo_subtitle {
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
+    color: #ccc;
+    margin: 0;
+}
+
+.contact_item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    justify-content: flex-start;
+}
+.contact_icon {
+    font-size: clamp(1.5rem, 2vw, 2.75rem);
+    color: #8bc34a;
+    padding-right: clamp(10px, 1.5vw, 2rem);
+}
+
+.services_title {
+    font-size: clamp(1rem, 3vw, 2rem);
+    margin-bottom: 0.75rem;
+    color: #8bc34a;
+}
+.services_list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: clamp(1rem, 1.5vw, 1.75rem);
+}
+.services_list li {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+}
+
+/* Removes styling and hover effects for the links */
+.contact_link {
+    color: inherit;
+    text-decoration: none;
+}
+.contact_link:hover,
+.contact_link:focus {
+    color: inherit;
+    text-decoration: none;
+    outline: none;
+}
+
+
+@media (max-width: 800px) {
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .footer_contact,
+    .footer_logo,
+    .footer_services {
+        flex: none;
+        width: 100%;
+        font-size: clamp(1.3rem, 4.5vw, 5rem);
+        padding-left: 0;
+        max-width: 400px;
+        margin-bottom: 1.5rem;
+        padding-right: 0;
+    }
+
+    .footer_contact {
+        padding-top: 1.25em;
+    }
+
+    .contact_item {
+        justify-content: center;
+    }
+
+    .footer_contact,
+    .footer_services {
+        align-items: center;
+    }
+
+    .contact_icon {
+        font-size: clamp(1.3rem, 4.5vw, 5rem);
+        padding-right: .5rem;
+    }
+
+    .footer_services_content {
+        text-align: center;
+        padding-left: 0;
+    }
+
+    .services_title {
+        font-size: clamp(1.75rem, 6vw, 2.5rem);
+    }
+    .services_list {
+        font-size: clamp(1.3rem, 6vw, 2.5rem);
+    }
+
+    .footer_logo_image {
+        width: clamp(240px, 70vw, 1000px);
+    }
+
+    .footer_logo_subtitle {
+        font-size: clamp(1.25rem, 3.5vw, 2.5rem);
+    }
+}
