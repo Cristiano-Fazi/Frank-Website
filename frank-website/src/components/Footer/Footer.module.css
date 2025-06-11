@@ -1,6 +1,5 @@
 /* Footer.module.css */
 .upper_footer {
-    /* background-color: #D9D9D9; */
     background-color: #111;
     color: #eee;
     display: flex;
@@ -25,7 +24,8 @@
     flex: 1 1 clamp(200px, 25%, 300px);
 }
 
-.upper_footer_item > img {
+.upper_footer_image_type_1,
+.upper_footer_image_type_2 {
     width: clamp(100px, 6vw, 300px);
     height:clamp(100px, 6vw, 300px);
     object-fit: contain;
@@ -177,14 +177,20 @@
     .upper_footer_item > div {
         text-align: center;
         flex: 1;
-        font-size:  clamp(1.5rem, 4vw, 4rem);
+        font-size:  clamp(1.25rem, 4vw, 4rem);
     }
 
-    .upper_footer_item > img {
-        width: clamp(100px, 40vw, 10rem);
-        height:clamp(100px, 40vw, 10rem);
+    .upper_footer_image_type_1 {
+        width: clamp(75px, 40vw, 10rem);
+        height:clamp(75px, 40vw, 10rem);
         /* width: 10rem;
         height: 10rem; */
+    }
+
+    .upper_footer_image_type_2 {
+        width: clamp(60px, 37.5vw, 10rem);
+        height:clamp(60px, 37.5vw, 10rem);
+        padding-left: 1vw;
     }
 
     .footer {

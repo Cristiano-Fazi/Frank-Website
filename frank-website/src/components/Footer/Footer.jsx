@@ -61,21 +61,21 @@ export default function Footer() {
             </div>
             <div className={styles.upper_footer}>
                 <div className={styles.upper_footer_item}>
-                    <img
+                    <img className={styles.upper_footer_image_type_1}
                     src="../../src/assets/Insurance-logo-2-no-background.png" alt="SIAQ Logo"/>
                     <div>
                         Assurance de responsabilité civile
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
-                    <img
+                    <img className={styles.upper_footer_image_type_2}
                     src="../../src/assets/SIAQ-logo-no-background.png" alt="SIAQ Logo"/>
                     <div>
                         Membre de la SIAQ
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
-                    <img
+                    <img className={styles.upper_footer_image_type_1}
                     src="../../src/assets/ISA-logo-no-background.png" alt="SIAQ Logo"/>
                     <div>
                         Membre des championnat des élagueurs
