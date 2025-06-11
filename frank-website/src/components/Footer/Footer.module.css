@@ -1,11 +1,16 @@
 /* Footer.module.css */
 .upper_footer {
-    background-color: #D9D9D9;
+    /* background-color: #D9D9D9; */
+    background-color: #111;
+    color: #eee;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(0rem, 7.5vw, 10rem); /* Bigger gap between items */
-    padding: 1rem 0; /* Optional padding for vertical spacing */
+    gap: clamp(0rem, 17vw, 25rem);
+    padding-left: clamp(0rem, 2.5vw, 1rem);
+    padding-right: clamp(0rem, 2.5vw, 1rem);
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
 }
 
 .upper_footer_item {
@@ -146,16 +151,40 @@
   transform: scaleX(1);
 }
 
+/* I do NOT like this solution to the gap problem but it's been an hour and im tired */
+@media (max-width: 1600px){
+    .upper_footer {
+        gap: clamp(0rem, 8vw, 20rem);
+    }
+}
+
 @media (max-width: 800px) {
     .upper_footer {
         align-items: center;
         flex-direction: column;
+        vertical-align: mid;
     }
 
     .upper_footer_item {
-        flex-direction: column;
-        text-align: center;
+        /* flex-direction: row; */
+        vertical-align: middle;
         align-items: center;
+        display: flex;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .upper_footer_item > div {
+        text-align: center;
+        flex: 1;
+        font-size:  clamp(1.5rem, 4vw, 4rem);
+    }
+
+    .upper_footer_item > img {
+        width: clamp(100px, 40vw, 10rem);
+        height:clamp(100px, 40vw, 10rem);
+        /* width: 10rem;
+        height: 10rem; */
     }
 
     .footer {

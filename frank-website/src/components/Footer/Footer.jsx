@@ -5,32 +5,6 @@ import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
 export default function Footer() {
     return (
         <footer className={styles.footer}>
-            <div className={styles.upper_footer}>
-                <div className={styles.upper_footer_item}>
-                    <img
-                    src="../../src/assets/Insurance-logo-2-no-background.png" alt="SIAQ Logo">
-                    </img>
-                    <div>
-                        Assurance de responsabilité civile
-                    </div>
-                </div>
-                <div className={styles.upper_footer_item}>
-                    <img
-                    src="../../src/assets/SIAQ-logo-no-background.png" alt="SIAQ Logo">
-                    </img>
-                    <div>
-                        Membre de la SIAQ
-                    </div>
-                </div>
-                <div className={styles.upper_footer_item}>
-                    <img
-                    src="../../src/assets/ISA-logo-no-background.png" alt="SIAQ Logo">
-                    </img>
-                    <div>
-                        Membre des championnat des élagueurs
-                    </div>
-                </div>
-            </div>
             <div className={styles.lower_footer}>
                 {/*Left Column*/}
                 <div className={styles.footer_contact}>
@@ -82,6 +56,29 @@ export default function Footer() {
                             <li>Taille de haie</li>
                             <li>Élague</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+            <div className={styles.upper_footer}>
+                <div className={styles.upper_footer_item}>
+                    <img
+                    src="../../src/assets/Insurance-logo-2-no-background.png" alt="SIAQ Logo"/>
+                    <div>
+                        Assurance de responsabilité civile
+                    </div>
+                </div>
+                <div className={styles.upper_footer_item}>
+                    <img
+                    src="../../src/assets/SIAQ-logo-no-background.png" alt="SIAQ Logo"/>
+                    <div>
+                        Membre de la SIAQ
+                    </div>
+                </div>
+                <div className={styles.upper_footer_item}>
+                    <img
+                    src="../../src/assets/ISA-logo-no-background.png" alt="SIAQ Logo"/>
+                    <div>
+                        Membre des championnat des élagueurs
                     </div>
                 </div>
             </div>
