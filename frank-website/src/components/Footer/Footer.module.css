@@ -1,5 +1,40 @@
 /* Footer.module.css */
-.footer {
+.upper_footer {
+    background-color: #111;
+    color: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: clamp(0rem, 17vw, 25rem);
+    padding-left: clamp(0rem, 2.5vw, 1rem);
+    padding-right: clamp(0rem, 2.5vw, 1rem);
+    padding-bottom: 2.5rem;
+    padding-top: 1rem;
+}
+
+.upper_footer_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+    font-size: clamp(1rem, 1.25vw, 2.5rem);
+    font-family: sans-serif;
+    text-align: left;
+    max-width: 350px;
+    flex: 1 1 clamp(200px, 25%, 300px);
+}
+
+.upper_footer_image_type_1,
+.upper_footer_image_type_2 {
+    width: clamp(100px, 6vw, 300px);
+    height:clamp(100px, 6vw, 300px);
+    object-fit: contain;
+    border-radius: 0.25rem;
+    display: block;
+    flex-shrink: 0;
+}
+
+.lower_footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -82,20 +117,82 @@
     line-height: 1.4;
 }
 
-/* Removes styling and hover effects for the links */
+/* I added an onhover effect for the contact info but it needs review*/
 .contact_link {
-    color: inherit;
-    text-decoration: none;
+  position: relative;
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
+
+.contact_link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 2px;
+  background-color: #8bc34a;
+  transform: scaleX(0);
+  transform-origin: bottom left;
+  transition: transform 0.3s ease;
+}
+
 .contact_link:hover,
 .contact_link:focus {
-    color: inherit;
-    text-decoration: none;
-    outline: none;
+  color: inherit;
+  /* color: #8bc34a; I don't love it turning green on hover*/
+  outline: none;
 }
 
+.contact_link:hover::after,
+.contact_link:focus::after {
+  transform: scaleX(1);
+}
+
+/* I do NOT like this solution to the gap problem but it's been an hour and im tired */
+@media (max-width: 1600px){
+    .upper_footer {
+        gap: clamp(0rem, 8vw, 20rem);
+    }
+}
 
 @media (max-width: 800px) {
+    .upper_footer {
+        align-items: center;
+        flex-direction: column;
+        vertical-align: mid;
+    }
+
+    .upper_footer_item {
+        /* flex-direction: row; */
+        vertical-align: middle;
+        align-items: center;
+        display: flex;
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .upper_footer_item > div {
+        text-align: center;
+        flex: 1;
+        font-size:  clamp(1.25rem, 4vw, 4rem);
+    }
+
+    .upper_footer_image_type_1 {
+        width: clamp(75px, 40vw, 10rem);
+        height:clamp(75px, 40vw, 10rem);
+        /* width: 10rem;
+        height: 10rem; */
+    }
+
+    .upper_footer_image_type_2 {
+        width: clamp(60px, 37.5vw, 10rem);
+        height:clamp(60px, 37.5vw, 10rem);
+        padding-left: 1vw;
+    }
+
     .footer {
         flex-direction: column;
         align-items: center;
