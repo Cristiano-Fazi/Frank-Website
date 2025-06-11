@@ -6,7 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: clamp(0rem, 19vw, 25rem);
+    gap: clamp(0rem, 17vw, 25rem);
     padding-left: clamp(0rem, 2.5vw, 1rem);
     padding-right: clamp(0rem, 2.5vw, 1rem);
     padding-bottom: 2.5rem;
