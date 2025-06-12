@@ -4,13 +4,14 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 import Footer from './components/Footer/Footer' 
+import Navbar from './components/NavBar/NavBar'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <div className='App'>
-      {/* Navbar Goes here */}
+      <Navbar/>
       <main>
         <div>
           <a href="https://vite.dev" target="_blank">
