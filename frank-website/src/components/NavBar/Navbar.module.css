@@ -28,7 +28,6 @@
   display: flex;
   align-items: center;
   gap: clamp(2.5px, 2vw, 5px);
-  /* gap: 30px; */
 }
 
 .rightSection {
@@ -38,13 +37,36 @@
 }
 
 .navItem {
+  position: relative;
+  display: inline-block;
   background: none;
   border: none;
   font-family: 'Inter', sans-serif;
   font-style: italic;
-  font-size: clamp(1rem, 1.5vw, 1.75rem);
+  font-size: clamp(1.25rem, 1.5vw, 1.75rem);
   cursor: pointer;
   color: black;
+  text-decoration: none;
+  overflow: visible;       
+  transition: color 0.3s ease;
+}
+
+.navItem::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0.5vw;
+  width: 80%;
+  height: 2px;
+  background-color: #8bc34a;
+  transform: translateX(-50%) scaleX(0);
+  transform-origin: center;
+  transition: transform 0.3s ease;
+}
+
+.navItem:hover::after,
+.navItem:focus::after {
+  transform: translateX(-50%) scaleX(1);
 }
 
 .quoteButton {
@@ -53,13 +75,13 @@
   display: inline-block;
   cursor: pointer;
   overflow: hidden;
-  border: 2px solid #84AD43;
+  border: 2.5px solid #84AD43;
   background: white;
   color: #84AD43;
   padding: 1rem;
   font-size: clamp(1rem, 1.75vw, 1.75rem);
   font-weight: bold;
-  border-radius: 10px;
+  border-radius: 15px;
   z-index: 1;
   transition: color 0.5s, border 0.3s;
 }
