@@ -64,8 +64,16 @@
   transition: transform 0.3s ease;
 }
 
-.navItem:hover::after,
-.navItem:focus::after {
+.navItem:focus {
+  outline: none;
+}
+
+.navLinks button:focus,
+.quoteButton:focus {
+  outline: none;
+}
+
+.navItem:hover::after {
   transform: translateX(-50%) scaleX(1);
 }
 
@@ -169,5 +177,5 @@
   .logo {
     height: 90px;
     padding-right: 10px;
-   }
+  }
 }
