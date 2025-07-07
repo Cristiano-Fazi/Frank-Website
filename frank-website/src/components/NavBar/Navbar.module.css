@@ -127,7 +127,7 @@
   font-style: italic;
   font-family: 'Inter', sans-serif;
   font-size: clamp(0.75rem, 1vw, 1.75rem);
-  padding-right: 1.5vw;
+  padding-right: 4.5vw;
   padding-left: 1vw;
 }
 
