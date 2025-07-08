@@ -3,10 +3,15 @@ import styles from './Navbar.module.css';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [language, setLanguage] = useState("en");
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
+
+  const toggleLanguage = () => {
+    setLanguage((previousLanguage) => (previousLanguage === "en" ? "fr" : "en"))
+  }
 
   return (
     <nav className={styles.navbar}>
@@ -38,7 +43,9 @@ export default function Navbar() {
       {/* Right: Quote + Language */}
       <div className={styles.rightSection}>
         <button className={styles.quoteButton}>Request a Free Quote</button>
-        <span className={styles.languageToggle}>Fr</span>
+        <span className={styles.languageToggle} onClick={toggleLanguage}>
+          {language === "en" ? "FR" : "EN"}
+        </span>
       </div>
     </nav>
   );

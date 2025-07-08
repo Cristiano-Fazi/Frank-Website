@@ -95,6 +95,7 @@
     margin-bottom: 0.75rem;
     justify-content: flex-start;
 }
+
 .contact_icon {
     font-size: clamp(1.5rem, 2vw, 2.75rem);
     color: #8bc34a;
@@ -117,7 +118,6 @@
     line-height: 1.4;
 }
 
-/* I added an onhover effect for the contact info but it needs review*/
 .contact_link {
   position: relative;
   display: inline-block;
@@ -142,7 +142,6 @@
 .contact_link:hover,
 .contact_link:focus {
   color: inherit;
-  /* color: #8bc34a; I don't love it turning green on hover*/
   outline: none;
 }
 
