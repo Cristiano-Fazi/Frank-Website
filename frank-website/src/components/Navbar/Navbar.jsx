@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './Navbar.module.css';
+import logoNoBackground from "../../assets/Logo-no-background.png"
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -23,11 +24,7 @@ export default function Navbar() {
           <div className={styles.bar}></div>
         </div>
         <div className={styles.logoContainer}>
-          <img
-            src="../../src/assets/Logo-no-background.png"
-            alt="Company Logo"
-            className={styles.logo}
-          />
+          <img src={logoNoBackground} alt="Company Logo" className={styles.logo}/>
         </div>
       </div>
 

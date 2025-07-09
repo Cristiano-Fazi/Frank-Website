@@ -1,5 +1,9 @@
 import styles from './Footer.module.css';
 import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
+import logoNoBackground from "../../assets/Logo-no-background.png"
+import insuranceLogoTwoNoBackground from "../../assets/Insurance-logo-2-no-background.png"
+import SIAQLogo from "../../assets/SIAQ-logo-no-background.png"
+import ISALogo from "../../assets/ISA-logo-no-background.png"
 
 export default function Footer() {
     return (
@@ -34,7 +38,7 @@ export default function Footer() {
                 {/*Center Column*/}
                 <div className={styles.footer_logo}>
                     <img
-                    src="../../src/assets/Logo-no-background.png"
+                    src={logoNoBackground}
                     alt="Service d'élagage François Logo"
                     className={styles.footer_logo_image}>
                     </img>
@@ -61,21 +65,21 @@ export default function Footer() {
             <div className={styles.upper_footer}>
                 <div className={styles.upper_footer_item}>
                     <img className={styles.upper_footer_image_type_1}
-                    src="../../src/assets/Insurance-logo-2-no-background.png" alt="SIAQ Logo"/>
+                    src={insuranceLogoTwoNoBackground} alt="Insurance Logo"/>
                     <div>
                         Assurance de responsabilité civile
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
                     <img className={styles.upper_footer_image_type_2}
-                    src="../../src/assets/SIAQ-logo-no-background.png" alt="SIAQ Logo"/>
+                    src={SIAQLogo} alt="SIAQ Logo"/>
                     <div>
                         Membre de la SIAQ
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
                     <img className={styles.upper_footer_image_type_1}
-                    src="../../src/assets/ISA-logo-no-background.png" alt="SIAQ Logo"/>
+                    src={ISALogo} alt="ISA Logo"/>
                     <div>
                         Membre des championnat des élagueurs
                     </div>
