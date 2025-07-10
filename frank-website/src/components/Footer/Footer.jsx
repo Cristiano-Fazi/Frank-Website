@@ -1,9 +1,9 @@
 import styles from './Footer.module.css';
 import { FaPhone, FaEnvelope, FaFacebookF } from 'react-icons/fa';
-import logoNoBackground from "../../assets/Logo-no-background.png"
-import insuranceLogoTwoNoBackground from "../../assets/Insurance-logo-2-no-background.png"
-import SIAQLogo from "../../assets/SIAQ-logo-no-background.png"
-import ISALogo from "../../assets/ISA-logo-no-background.png"
+import logoNoBackground from "/Logo-no-background.png"
+import insuranceLogoTwoNoBackground from "/Insurance-logo-2-no-background.png"
+import SIAQLogo from "/SIAQ-logo-no-background.png"
+import ISALogo from "/ISA-logo-no-background.png"
 
 export default function Footer() {
     return (
