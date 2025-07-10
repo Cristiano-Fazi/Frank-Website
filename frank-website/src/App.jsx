@@ -2,7 +2,7 @@ import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Footer from './components/Footer/Footer' 
 import Navbar from './components/NavBar/NavBar'
-import Submission from './pages/submission/Submission'
+import Submission from './pages/submission/submission'
 
 function App() {
   return (
