@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import styles from './Navbar.module.css';
-import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,7 +37,7 @@ export default function Navbar() {
 
       {/* Right: Quote + Language */}
       <div className={styles.rightSection}>
-        <Link to="/services" className={styles.quoteButton}>Request a Free Quote</Link>
+        <button className={styles.quoteButton}>Request a Free Quote</button>
         <span className={styles.languageToggle}>Fr</span>
       </div>
     </nav>
