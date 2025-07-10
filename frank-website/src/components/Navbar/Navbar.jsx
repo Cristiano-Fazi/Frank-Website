@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './Navbar.module.css';
-import logoNoBackground from "/Logo-no-background.png"
+import logoNoBackground from '/Logo-no-background.png'
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
