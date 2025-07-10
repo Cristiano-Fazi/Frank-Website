@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import styles from './Submission.module.css';
-import subTop from '../../components/SubTop/SubTop';
-
+// import { useState } from 'react';
+// import styles from './Submission.module.css';
 
 export default function Submission() {
 
-    return <subTop/>
+    return (
+        <p> Submission Page goes here </p>
+    )
 }
