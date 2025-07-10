@@ -6,6 +6,11 @@
   height: 100%;
 }
 
+html, body, #root {
+  height: 100%;
+  margin: 0;
+}
+
 main {
   flex: 1;
 }
@@ -14,6 +19,18 @@ main {
   display: flex;
   flex-direction: column;
   min-height: 100vh; 
+}
+
+.Footer {
+  margin-top: auto;
+}
+
+.App main {
+  flex: 1;
+}
+
+.appContent {
+  flex: 1;
 }
 
 .logo {
