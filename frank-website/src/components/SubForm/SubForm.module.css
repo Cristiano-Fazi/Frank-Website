@@ -1,0 +1,82 @@
+.full_form_component {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.text_above_form h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.text_above_form p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sub_form form {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_group label {
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+
+.info {
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.full_width {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+}
+
+.details_box {
+  margin-top: 0.5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  resize: vertical;
+  width: 100%;
+}
+
+.info::placeholder,
+.details_box::placeholder {
+  font-family: 'Arial' ;/* Or any font you want */
+  font-size: 1rem;
+  font-style: italic;
+  color: #888; /* Optional: change placeholder color */
+}
+
+.submit_button {
+  grid-column: 1 / -1;
+  background-color: #84AD43;
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-size: 1.1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 1rem;
+}
+
+.submit_button:hover {
+  background-color: #218838;
+}
