@@ -75,12 +75,22 @@ export default function SubForm() {
 
           <div className={styles.input_group}>
             <label htmlFor="city">City*</label>
-            <input type="text" className={styles.info} placeholder="City" required />
+            <input
+              type="text"
+              className={styles.info}
+              placeholder="City"
+              required
+            />
           </div>
 
           <div className={styles.input_group}>
             <label htmlFor="postalCode">Postal Code*</label>
-            <input type="text" className={styles.info} placeholder="XXX XXX" required/>
+            <input
+              type="text"
+              className={styles.info}
+              placeholder="XXX XXX"
+              required
+            />
           </div>
 
           <div className={styles.full_width}>
