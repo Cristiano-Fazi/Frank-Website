@@ -1,0 +1,18 @@
+{
+  "navbar": {
+    "services": "Our Services",
+    "about": "About Us",
+    "team": "Our Team",
+    "quote": "Request a Free Quote"
+  },
+  "footer": {
+    "emergency": "Emergency Services 24/7",
+    "services": "Services",
+    "felling": "Felling",
+    "pruning": "Pruning",
+    "removal": "Stump Removal",
+    "clearing": "Clearing",
+    "trimming": "Hedge Trimming",
+    "cabling": "Cabling and Bracing"
+  }
+}
