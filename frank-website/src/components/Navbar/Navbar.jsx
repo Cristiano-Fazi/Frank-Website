@@ -1,17 +1,19 @@
 import { useState } from 'react';
 import styles from './Navbar.module.css';
 import logoNoBackground from '/Logo-no-background.png'
+import { useTranslation } from 'react-i18next';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const [language, setLanguage] = useState("en");
+  const { t, i18n } = useTranslation();
 
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen);
   };
 
   const toggleLanguage = () => {
-    setLanguage((previousLanguage) => (previousLanguage === "en" ? "fr" : "en"))
+    const next = i18n.language === 'en' ? 'fr' : 'en';
+    i18n.changeLanguage(next);
   }
 
   return (
@@ -32,16 +34,16 @@ export default function Navbar() {
       <div
         className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}
       >
-        <button className={styles.navItem}>À Propos</button>
-        <button className={styles.navItem}>Nos Services</button>
-        <button className={styles.navItem}>Notre Équipe</button>
+        <button className={styles.navItem}>{t('navbar.about')}</button>
+        <button className={styles.navItem}>{t('navbar.services')}</button>
+        <button className={styles.navItem}>{t('navbar.team')}</button>
       </div>
 
       {/* Right: Quote + Language */}
       <div className={styles.rightSection}>
-        <button className={styles.quoteButton}>Request a Free Quote</button>
+        <button className={styles.quoteButton}>{t('navbar.quote')}</button>
         <span className={styles.languageToggle} onClick={toggleLanguage}>
-          {language === "en" ? "FR" : "EN"}
+          {i18n.language === "en" ? "FR" : "EN"}
         </span>
       </div>
     </nav>

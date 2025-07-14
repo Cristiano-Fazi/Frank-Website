@@ -4,8 +4,11 @@ import logoNoBackground from '/Logo-no-background.png'
 import insuranceLogoTwoNoBackground from '/Insurance-logo-2-no-background.png'
 import SIAQLogo from '/SIAQ-logo-no-background.png'
 import ISALogo from '/ISA-logo-no-background.png'
+import { useTranslation } from 'react-i18next';
 
 export default function Footer() {
+    const { t, i18n } = useTranslation();
+
     return (
         <footer className={styles.footer}>
             <div className={styles.lower_footer}>
@@ -43,7 +46,7 @@ export default function Footer() {
                     className={styles.footer_logo_image}>
                     </img>
                     <p className={styles.footer_logo_subtitle}>
-                        Service d’urgence 24h/7
+                        {t('footer.emergency')}
                     </p>
                 </div>
 
@@ -52,12 +55,12 @@ export default function Footer() {
                     <div className={styles.footer_services_content}>
                         <h3 className={styles.services_title}>Services</h3>
                         <ul className={styles.services_list}>
-                            <li>Abattage</li>
-                            <li>Déboisement</li>
-                            <li>Essouchement</li>
-                            <li>Haubanage</li>
-                            <li>Taille de haie</li>
-                            <li>Élague</li>
+                            <li>{t('footer.felling')}</li>
+                            <li>{t('footer.clearing')}</li>
+                            <li>{t('footer.removal')}</li>
+                            <li>{t('footer.cabling')}</li>
+                            <li>{t('footer.trimming')}</li>
+                            <li>{t('footer.pruning')}</li>
                         </ul>
                     </div>
                 </div>
@@ -67,21 +70,21 @@ export default function Footer() {
                     <img className={styles.upper_footer_image_type_1}
                     src={insuranceLogoTwoNoBackground} alt="Insurance Logo"/>
                     <div>
-                        Assurance de responsabilité civile
+                        {t('footer.insurance')}
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
                     <img className={styles.upper_footer_image_type_2}
                     src={SIAQLogo} alt="SIAQ Logo"/>
                     <div>
-                        Membre de la SIAQ
+                        {t('footer.SIAQ')}
                     </div>
                 </div>
                 <div className={styles.upper_footer_item}>
                     <img className={styles.upper_footer_image_type_1}
                     src={ISALogo} alt="ISA Logo"/>
                     <div>
-                        Membre des championnat des élagueurs
+                        {t('footer.champion')}
                     </div>
                 </div>
             </div>

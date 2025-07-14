@@ -1,4 +1,3 @@
-/* Footer.module.css */
 .upper_footer {
     background-color: #111;
     color: #eee;
@@ -58,7 +57,7 @@
 }
 
 .footer_services {
-    align-items: flex-end;
+    align-items: flex-start;
     padding-right: clamp(10px, 5vw, 300px);
     flex: 0.25 1 clamp(25px, 12.5%, 360px);
 }
