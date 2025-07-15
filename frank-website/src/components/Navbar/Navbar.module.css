@@ -1,4 +1,10 @@
 .navbar {
+  position: fixed;  /* takes it out of flow and fixes it to the viewport */
+  top: 0;           /* align to the very top */
+  left: 0;          /* span full width from the left edge */
+  width: 100%;      /* fill the width of the viewport */
+  z-index: 1000;    /* ensure it sits above other content */
+
   display: flex;
   align-items: center;
   justify-content: space-between;
