@@ -3,10 +3,9 @@ import SubForm from '../../components/SubForm/SubForm'
 
 export default function Submission () {
     return (
-
         <div>
-        <SubTop/>
-        <SubForm/>
+            <SubTop/>
+            <SubForm/>
         </div>
-)
+    )
 }
