@@ -176,4 +176,8 @@
     height: 80px;
     margin-right: 10px;
   }
+
+  .languageToggle {
+    margin-right: 30px
+  }
 }
