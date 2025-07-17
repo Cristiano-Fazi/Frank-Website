@@ -181,8 +181,6 @@
     .upper_footer_image_type_1 {
         width: clamp(75px, 40vw, 10rem);
         height:clamp(75px, 40vw, 10rem);
-        /* width: 10rem;
-        height: 10rem; */
     }
 
     .upper_footer_image_type_2 {
