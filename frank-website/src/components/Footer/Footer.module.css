@@ -1,4 +1,3 @@
-/* Footer.module.css */
 .upper_footer {
     background-color: #111;
     color: #eee;
@@ -58,7 +57,7 @@
 }
 
 .footer_services {
-    align-items: flex-end;
+    align-items: flex-start;
     padding-right: clamp(10px, 5vw, 300px);
     flex: 0.25 1 clamp(25px, 12.5%, 360px);
 }
@@ -95,6 +94,7 @@
     margin-bottom: 0.75rem;
     justify-content: flex-start;
 }
+
 .contact_icon {
     font-size: clamp(1.5rem, 2vw, 2.75rem);
     color: #8bc34a;
@@ -117,7 +117,6 @@
     line-height: 1.4;
 }
 
-/* I added an onhover effect for the contact info but it needs review*/
 .contact_link {
   position: relative;
   display: inline-block;
@@ -142,7 +141,6 @@
 .contact_link:hover,
 .contact_link:focus {
   color: inherit;
-  /* color: #8bc34a; I don't love it turning green on hover*/
   outline: none;
 }
 
@@ -183,8 +181,6 @@
     .upper_footer_image_type_1 {
         width: clamp(75px, 40vw, 10rem);
         height:clamp(75px, 40vw, 10rem);
-        /* width: 10rem;
-        height: 10rem; */
     }
 
     .upper_footer_image_type_2 {

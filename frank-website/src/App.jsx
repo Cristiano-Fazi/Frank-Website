@@ -1,8 +1,8 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
-import Footer from './components/Footer/Footer' 
-import Navbar from './components/NavBar/NavBar'
 import Submission from './pages/submission/submission'
+import Footer from './components/Footer/Footer.jsx' 
+import Navbar from './components/Navbar/Navbar.jsx'
 
 function App() {
   return (

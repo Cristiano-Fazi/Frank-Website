@@ -1,0 +1,21 @@
+{
+  "navbar": {
+    "services": "Nos Services",
+    "about": "À Propose",
+    "team": "Notre Equipe",
+    "quote": "Demander un Devis Gratuit"
+  },
+  "footer": { 
+    "emergency": "Service d'urgence 24h/7",
+    "services": "Services",
+    "felling": "Abattage",
+    "clearing": "Déboisement",
+    "removal": "Essouchage",
+    "cabling": "Haubanage",
+    "trimming": "Taille de Haie",
+    "pruning": "Élagage",
+    "insurance": "Assurance de responsabilité civile",
+    "SIAQ": "Membre de la SIAQ",
+    "champion": "Membre des Championnat des Élagueurs"
+  }
+}
