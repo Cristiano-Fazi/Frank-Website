@@ -13,7 +13,7 @@ function App() {
           <Route path="/services" element={<Submission />}/>
         </Routes>
       </main>
-      <Footer />
+      <Footer/>
     </div>
   )
 }
