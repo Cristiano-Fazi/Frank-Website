@@ -196,6 +196,15 @@ export default function SubForm() {
             value="Submit Request"
           />
         </form>
+
+        {showConfirm && (
+          <div className={styles.modalOverlay}>
+            <div className={styles.modal}>
+              <p>Thank you! Your request has been submitted.</p>
+              <button onClick={() => setShowConfirm(false)}>Close</button>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );
