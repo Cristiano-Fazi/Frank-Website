@@ -1,4 +1,4 @@
-# Frank-Website 👉 [Visit the Site!](https://service-delagage-francois.pages.dev/)
+# Frank-Website 👉 <a href="https://service-delagage-francois.pages.dev/" target="_blank">Visit the site!</a>
 
 
 ## Pages 💻
