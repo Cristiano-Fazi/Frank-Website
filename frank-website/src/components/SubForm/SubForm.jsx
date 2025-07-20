@@ -1,7 +1,9 @@
 import { useState } from "react";
 import styles from "./SubForm.module.css";
+import { useTranslation } from 'react-i18next';
 
 export default function SubForm() {
+  const { t, i18n } = useTranslation();
   const initialForm = {
     firstName: "",
     lastName: "",
@@ -48,26 +50,22 @@ export default function SubForm() {
   return (
     <div className={styles.full_form_component}>
       <div className={styles.text_above_form}>
-        <h1>
-          Fill out the form below and we'll get back to you within 48 hours to
-          book a visit.
-        </h1>
+        <h1> {t("estimate.formHeader")} </h1>
         <p>
-          Note that <b>no price can be given over the phone.</b> We must visit
-          in person to asses all factors.
+          {t("estimate.subheaderStart")} <b>{t("estimate.subheaderMiddle")}</b> {t("estimate.subheaderEnd")} 
         </p>
       </div>
 
       <div className={styles.sub_form}>
         <form onSubmit={handleSubmit}>
           <div className={styles.input_group}>
-            <label htmlFor="firstName">First Name*</label>
+            <label htmlFor="firstName">{t('estimate.firstName')}*</label>
             <input
               name = "firstName"
               id="firstName"
               type="text"
               className={styles.info}
-              placeholder="First Name..."
+              placeholder={t('estimate.firstNameInput')}
               value={formData.firstName}
               onChange={handleChange}
               required
@@ -75,13 +73,13 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="lastName">Last Name*</label>
+            <label htmlFor="lastName">{t('estimate.lastName')}*</label>
             <input
               name="lastName"
               id="lastName"
               type="text"
               className={styles.info}
-              placeholder="Last Name..."
+              placeholder={t('estimate.lastNameInput')}
               value={formData.lastName}
               onChange={handleChange}
               required
@@ -89,7 +87,7 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="cellPhone">Cell Phone*</label>
+            <label htmlFor="cellPhone">{t('estimate.cellPhone')}*</label>
             <input
               name="cellPhone"
               id="cellPhone"
@@ -103,7 +101,7 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="homePhone">Home Phone</label>
+            <label htmlFor="homePhone">{t('estimate.homePhone')}</label>
             <input
               name="homePhone"
               id="homePhone"
@@ -116,26 +114,26 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="email">Email*</label>
+            <label htmlFor="email">{t('estimate.email')}*</label>
             <input
               name="email"
               id="email"
               type="text"
               className={styles.info}
-              placeholder="example@example.com"
+              placeholder={t('estimate.emailInput')}
               value={formData.email}
               onChange={handleChange}
               required
             />
           </div>
           <div className={styles.input_group}>
-            <label htmlFor="address">Address*</label>
+            <label htmlFor="address">{t('estimate.address')}*</label>
             <input
               name="address"
               id="address"
               type="text"
               className={styles.info}
-              placeholder="XXX Example Street"
+              placeholder={t('estimate.addressInput')}
               value={formData.address}
               onChange={handleChange}
               required
@@ -143,13 +141,13 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="city">City*</label>
+            <label htmlFor="city">{t('estimate.city')}*</label>
             <input
               name="city"
               id="city"
               type="text"
               className={styles.info}
-              placeholder="City"
+              placeholder={t('estimate.cityInput')}
               value={formData.city}
               onChange={handleChange}
               required
@@ -157,7 +155,7 @@ export default function SubForm() {
           </div>
 
           <div className={styles.input_group}>
-            <label htmlFor="postalCode">Postal Code*</label>
+            <label htmlFor="postalCode">{t('estimate.postalCode')}*</label>
             <input
               name="postalCode"
               id="postalCode"
@@ -172,18 +170,15 @@ export default function SubForm() {
 
           <div className={styles.full_width}>
             <label htmlFor="explanation">
-              Please describe the work that needs to be done in the{" "}
-              <b>
-                <i>greatest detail possible</i>
-              </b>
-              . This will allow us to more easily provide a quote. (Include
-              number and location of trees, nature of work, ect){" "}
+              {t("estimate.explanationStart")}
+              <b><i>{t("estimate.explanationMiddle")}</i></b>
+              {t("estimate.explanationEnd")}
             </label>
             <textarea
               name="explanation"
               id="explanation"
               className={styles.details_box}
-              placeholder="Enter details here..."
+              placeholder={t("estimate.explanationInput")}
               rows="6"
               value={formData.explanation}
               onChange={handleChange}
@@ -193,15 +188,15 @@ export default function SubForm() {
           <input
             type="submit"
             className={styles.submit_button}
-            value="Submit Request"
+            value={t("estimate.submit")}
           />
         </form>
 
         {showConfirm && (
           <div className={styles.modalOverlay}>
             <div className={styles.modal}>
-              <p>Thank you! Your request has been submitted.</p>
-              <button onClick={() => setShowConfirm(false)}>Close</button>
+              <p>{t("estimate.confirmation")}</p>
+              <button onClick={() => setShowConfirm(false)}>{t("estimate.closeConfirmation")}</button>
             </div>
           </div>
         )}

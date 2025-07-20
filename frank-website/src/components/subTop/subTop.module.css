@@ -1,4 +1,3 @@
-
 .submission_img_container {
   position: relative;
   width: 100%;
@@ -34,21 +33,20 @@
   font-size: clamp(1.5rem, 5vw, 4rem);
 }
 
-/* Large screen behavior */
 @media screen and (min-width: 1024px) {
   .submission-image-container {
     width: 100%;
-    height: 80vh; /* fill vertically */
+    height: 80vh;
   }
 
   .submission-img {
     width: 100%;
-    height: 100%; /* stretch vertically */
-    object-fit: cover; /* crop to fit */
+    height: 100%;
+    object-fit: cover;
   }
 
   .submission-image-text {
-    font-size: 3rem; /* larger text for desktop */
+    font-size: 3rem;
     max-width: 70%;
     padding: 10px 20px;
   }

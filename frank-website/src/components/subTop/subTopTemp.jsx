@@ -1,7 +1,10 @@
 import submissionTopImg from '../../assets/submission-top.png';
 import styles from './subTop.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function SubTop(){
+    const { t, i18n } = useTranslation();
+
     return(
         <div className={styles.submission_img_container}>
             <img
@@ -11,7 +14,7 @@ export default function SubTop(){
             />
 
             <div className={styles.submission_img_text}>
-                Get a free Estimate from our Trusted Professionals
+                {t("estimate.header")}
             </div>
         </div>
     )
