@@ -1,5 +1,5 @@
 import submissionTopImg from '../../assets/submission-top.png';
-import styles from './subTop.module.css';
+import styles from './SubTop.module.css';
 import { useTranslation } from 'react-i18next';
 
 export default function SubTop(){
