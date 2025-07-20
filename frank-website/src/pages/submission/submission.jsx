@@ -1,5 +1,5 @@
-import SubTop from '../../components/subTop/subTopTemp'
-import SubForm from '../../components/SubForm/SubForm'
+import SubTop from '../../components/subTop/subTop.jsx'
+import SubForm from '../../components/SubForm/SubForm.jsx'
 
 export default function Submission () {
     return (
