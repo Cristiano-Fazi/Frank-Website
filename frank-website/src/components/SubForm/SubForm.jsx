@@ -24,26 +24,62 @@ export default function SubForm() {
     setFormData((prev) => ({ ...prev, [name]: value}));
   };
 
+  //Get access token
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // Delete this console.log later
-    console.log("Submitting job request:", formData);
+    const clientId = import.meta.env.VITE_JOBBER_CLIENT_ID;
+    const clientSecret = import.meta.env.VITE_JOBBER_CLIENT_SECRET; 
 
-    // TODO: integrate with Jobber API here
-    // Example:
-    // try {
-    //   const response = await fetch('/api/jobber', {
-    //     method: 'POST',
-    //     headers: { 'Content-Type': 'application/json' },
-    //     body: JSON.stringify(formData)
-    //   });
-    //   const result = await response.json();
-    //   console.log('Jobber response:', result);
-    // } catch (error) {
-    //   console.error('Jobber API error:', error);
-    // }
+    const tokenRes = await fetch(
+      "https://api.getjobber.com/oauth/clients/token",
+      {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          grant_type:    "client_credentials",
+          client_id:     clientId,
+          client_secret: clientSecret,
+        }),
+      }
+    );
 
+    if(!tokenRes.ok) {
+      console.error("Token error", await tokenRes.text());
+      return;
+    }
+
+    const { access_token } = await tokenRes.json();
+
+    const quoteRes = await fetch("https://api.getjobber.com/v1/quotes",
+    {
+      method: "POST",
+      headers: {
+        "Content-Type":  "application/json",
+        "Authorization": `Bearer ${access_token}`,
+      },
+      body: JSON.stringify({
+        client: {
+          firstName:  formData.firstName,
+          lastName:   formData.lastName,
+          email:      formData.email,
+          phone:      formData.cellPhone,
+          address:    formData.address,
+          city:       formData.city,
+          postalCode: formData.postalCode,
+        },
+        details: {
+          description: formData.explanation,
+          requestedAt: new Date().toISOString(),
+        },
+      })
+    });
+    if(!quoteRes.ok) {
+      console.error("Error sending quote request");
+      return;
+    }
+    
     setFormData(initialForm);
+    console.log("Submitting job request:", formData);//Delete this later
     setShowConfirm(true);
   }
 
