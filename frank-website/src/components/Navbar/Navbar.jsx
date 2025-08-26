@@ -35,7 +35,8 @@ export default function Navbar() {
       <div
         className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}
       >
-        <button className={styles.navItem}>{t('navbar.about')}</button>
+        {/* <button className={styles.navItem}>{t('navbar.about')}</button> */}
+        <Link to="/about" className={styles.navItem}>{t('navbar.about')}</Link>
         <button className={styles.navItem}>{t('navbar.services')}</button>
         <button className={styles.navItem}>{t('navbar.team')}</button>
       </div>
