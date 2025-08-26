@@ -1,0 +1,32 @@
+.homePage_container {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* full screen height, adjust if needed */
+  overflow: hidden;
+}
+
+.homeMain_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* makes image fill without distortion */
+}
+
+.homeMain_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* perfectly center */
+  text-align: center;
+  color: white; /* make it visible on dark img */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.6); /* readability */
+}
+
+.homeMain_text h1 {
+  font-size: 3rem; /* bigger heading */
+  margin-bottom: 1rem;
+}
+
+.homeMain_text p {
+  font-size: 1.5rem; /* smaller than h1 */
+  margin: 0.3rem 0;
+}
