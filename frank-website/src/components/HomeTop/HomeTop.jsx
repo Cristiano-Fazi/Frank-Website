@@ -8,8 +8,8 @@ export default function HomeTop() {
 
       <div className={styles.homeMain_text}>
         <h1>Arborist Certified and Passionate</h1>
-        <p className="service_urgence">Urgent Service available 24h/7</p>
-        <p className="phone_number">514-651-7659</p>
+                <p className={styles.service_urgence}>Urgent Service available 24h/7</p>
+        <p className={styles.phone_number}>514-651-7659</p>
       </div>
     </div>
   );
