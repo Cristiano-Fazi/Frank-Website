@@ -44,5 +44,11 @@
     "insurance": "Civil Liability Insurance",
     "SIAQ": "Member of the SIAQ",
     "champion": "Member of the Arborists Championship"
+  },
+  "about":{
+    "title": "Certified and Passionate Arborist",
+    "urgent": "Urgent Services available 24h/7",
+    "desTitle": "Who are we?"
+
   }
 }

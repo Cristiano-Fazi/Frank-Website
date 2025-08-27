@@ -1,10 +1,13 @@
 import treePic from "../../assets/tree_cartoon.png";
 import styles from "./HomeDes.module.css";
+import { useTranslation } from "react-i18next";
 
 export default function homeDes(){
+    const {t, i18n } = useTranslation();
+    
     return(
         <div className={styles.homeDescription}>
-           <h1 className={styles.homeDes_title}>Who are we?</h1>
+           <h1 className={styles.homeDes_title}>{t("about.desTitle")}</h1>
 
            <div className={styles.homeDes_content}>
            <p className={styles.homeDes_text}>Chez Service d'Élagage François, nous prenons soin de vos arbres comme si c'étaient les nôtres. 🌳Notre expertise en élagage, abattage et entretien

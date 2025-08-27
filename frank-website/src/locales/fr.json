@@ -44,5 +44,12 @@
     "insurance": "Assurance de responsabilité civile",
     "SIAQ": "Membre de la SIAQ",
     "champion": "Membre des Championnat des Élagueurs"
+  },
+  "about":{
+    "title": "Arboriste certifié et passionné",
+    "urgent": "Services d'urgence 24h/7",
+    "desTitle": "Qui sommes-nous?"
+    
+
   }
 }
