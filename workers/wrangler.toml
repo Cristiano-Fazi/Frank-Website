@@ -1,18 +1,18 @@
 name = "jobber-proxy"
 main = "jobber-proxy.js"
-compatibility_date = "2025-07-23"
+compatibility_date = "2025-08-26"
 
 [[routes]]
-pattern = "https://service-delagage-francois.pages.dev/api/*"
-zone_id = "your-zone-id"
+pattern = "https://elagagefrancois.com/api/*"
+zone_id = "706de84a4c8efaa6d68e72d35bef79b3"
 
 [vars]
 # (empty; using env vairables and secrets instead)
 
 [env.dev]
-account_id = "your-account-id"
-route = "https://dev-api.service-delagage-francois.pages.dev/api/*"
+account_id = "706de84a4c8efaa6d68e72d35bef79b3"
+route = "https://elagagefrancois.com/api/*"
 
 [env.production]
-account_id = "your-account-id"
-route = "https://service-delagage-francois.pages.dev/api/*"
+account_id = "706de84a4c8efaa6d68e72d35bef79b3"
+route = "https://elagagefrancois.com/api/*"
