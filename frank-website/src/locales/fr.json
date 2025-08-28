@@ -49,7 +49,20 @@
     "title": "Arboriste certifié et passionné",
     "urgent": "Services d'urgence 24h/7",
     "desTitle": "Qui sommes-nous?"
-    
-
+  },
+  "service":{
+    "abattage": "Abattage",
+    "deboisement": "Déboisement",
+    "elagage": "Élagage",
+    "essouchage": "Éssouchage",
+    "taille": "Taille de haie",
+    "haubanage": "Haubanage",
+    "desAba": "L'abattage est essentiel quand l'arbre est malade, infesté de parasites ou dangereux. Il évite la propagation de maladies aux autres végétaux et protège les infrastructures.",
+    "desDeb": "Le déboisement est nécessaire pour aménager un terrain, le rendre constructible ou sécuriser une zone.",
+    "desEl": "L'élagage élimine les branches mortes ou malades, réduit les risques de branches dange reuses, améliore l'esthétique de votre jardin et permet un meilleur dégagement de la structure environnante.",
+    "desEss": "L'essouchage élimine la souche en profondeur, prévenant la pourriture et permettant de récupérer l’espace pour de nouveaux aménagements ou plantations. Idéale pour un terrain propre et sain!",
+    "desTaille": "La taille régulière des haies permet de maintenir une forme esthétique et ordonnée, tout en évitant que la haie envahisse les espaces voisins.",
+    "desHaub": "L'haubanage renforce les fourches faibles. En installant des câbles ou tiges métalliques, on prévient les risques de rupture, prolonge la vie de l'arbre et évite un abattage prématuré.",
+    "estimate": "Obtenez un devis pour votre travail entièrement gratuit!"
   }
 }

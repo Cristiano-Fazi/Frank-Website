@@ -49,6 +49,21 @@
     "title": "Certified and Passionate Arborist",
     "urgent": "Urgent Services available 24h/7",
     "desTitle": "Who are we?"
-
+  }
+  ,
+  "service":{
+    "abattage": "Felling",
+    "deboisement": "Clearing",
+    "elagage": "Pruning",
+    "essouchage": "Stump Removal",
+    "taille": "Hedge Trimming",
+    "haubanage": "Cabling",
+    "desAba": "Tree felling is essential when the tree is diseased, infested with pests, or dangerous. It prevents the spread of disease to other plants and protects infrastructure.",
+    "desDeb": "Deforestation is necessary to develop land, make it buildable, or secure an area.",
+    "desEl": "Pruning removes dead or diseased branches, reduces the risk of dangerous branches, improves the aesthetics of your garden, and allows better clearance of the surrounding structure.",
+    "desEss": "Stump removal eliminates the stump deeply, preventing rot and allowing the space to be used for new landscaping or planting. Ideal for a clean and healthy yard!",
+    "desTaille": "Regular hedge trimming helps maintain an aesthetic and tidy shape, while preventing the hedge from encroaching on neighboring spaces.",
+    "desHaub": "Cabling/Bracing strengthens weak forks. By installing cables or metal rods, it prevents breakage risks, extends the life of the tree, and avoids premature felling.",
+    "estimate": "Get an Estimate for your Job Completely Free!"
   }
 }

@@ -45,7 +45,7 @@ export default function Navbar() {
 
       {/* Right: Quote + Language */}
       <div className={styles.rightSection}>
-        <Link to="/services" className={styles.quoteButton}>{t('navbar.quote')}</Link>
+        <Link to="/submission" className={styles.quoteButton}>{t('navbar.quote')}</Link>
         <span className={styles.languageToggle} onClick={toggleLanguage}>
           {i18n.language === "en" ? "FR" : "EN"}
         </span>

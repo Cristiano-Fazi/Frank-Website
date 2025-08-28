@@ -11,7 +11,7 @@ function App() {
       <Navbar/>
       <main className="appContent">
         <Routes>
-          <Route path="/services" element={<Submission />}/>
+          <Route path="/submission" element={<Submission />}/>
           <Route path="/about" element={<About/>}/>
         </Routes>
       </main>
