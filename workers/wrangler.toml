@@ -4,7 +4,7 @@ compatibility_date = "2025-08-26"
 
 [[routes]]
 pattern = "https://elagagefrancois.com/api/*"
-zone_id = "706de84a4c8efaa6d68e72d35bef79b3"
+zone_id = "8fca53dc36a58fd76bc933e7b5e81898"
 
 [vars]
 # (empty; using env vairables and secrets instead)

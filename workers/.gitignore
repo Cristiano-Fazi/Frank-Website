@@ -1,0 +1,2 @@
+#powershell scripts (some have env variables in them for testing)
+*.ps1
