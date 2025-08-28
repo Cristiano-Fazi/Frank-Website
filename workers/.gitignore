@@ -1,2 +1,2 @@
-#powershell scripts (some have env variables in them for testing)
-*.ps1
+#env files should be ignored
+*.env
