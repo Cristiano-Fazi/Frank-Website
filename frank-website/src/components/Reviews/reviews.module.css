@@ -1,0 +1,135 @@
+/* Full-width gray background */
+.carouselWrapper {
+  background-color: #d9d9d9;
+  width: 100%;
+  padding: 40px 0;
+}
+
+/* Container for the slider */
+.reviewsContainer {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Prevent cut-off in react-slick */
+.reviewsContainer .slick-list {
+  overflow: visible !important;
+}
+
+/* Wrapper for each slide */
+.reviewCardWrapper {
+  padding: 8px;
+}
+
+/* Review card */
+.reviewCard {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  width: 100%;
+  max-width: 250px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  box-sizing: border-box;
+  min-height: 220x;      /* minimum height */
+}
+
+/* Profile picture */
+.profilePic {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 8px;
+}
+
+/* Name */
+.reviewName {
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 4px 0;
+}
+
+/* Stars */
+.stars {
+  margin: 6px 0;
+}
+
+.star {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0 1px;
+}
+
+.filled {
+  color: gold;
+}
+
+/* Review text */
+.reviewText {
+  font-size: 0.85rem;
+  color: #555;
+  margin-top: 6px;
+  line-height: 1.2;
+  word-wrap: break-word; /* wrap long words */
+}
+
+/* Custom Arrows */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #333;
+  color: white;
+  padding: 6px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10;
+  font-size: 14px;
+}
+
+/* Arrows inside the carousel */
+.prev {
+  left: 5px;
+}
+
+.next {
+  right: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .reviewCard {
+    max-width: 200px;
+    padding: 12px;
+  }
+  .profilePic {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .reviewCard {
+    max-width: 90%;
+    padding: 10px;
+  }
+  .profilePic {
+    width: 50px;
+    height: 50px;
+  }
+  .reviewText {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .arrow {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}
