@@ -1,13 +1,13 @@
 {
   "navbar": {
     "services": "Nos Services",
-    "about": "À Propose",
-    "team": "Notre Equipe",
+    "about": "À Propos",
+    "team": "Notre Équipe",
     "quote": "Demander un Devis Gratuit"
   },
   "estimate": {
     "header": "Obtenez une Estimation Gratuite de nos Professionnels de Confiance",
-    "formHeader": "Remplissez le formulaire ci‑dessous et nous vous recontacterons sous 48 heures pour planifier une visite",
+    "formHeader": "Remplissez le formulaire ci-dessous et nous vous recontacterons sous 48 heures pour planifier une visite",
     "subheaderStart": "Notez que ",
     "subheaderMiddle": "aucun prix ne peut être donné par téléphone. ",
     "subheaderEnd": "Nous devons effectuer une visite sur place pour évaluer tous les facteurs.",

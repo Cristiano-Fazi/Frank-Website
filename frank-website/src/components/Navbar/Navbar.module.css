@@ -32,7 +32,7 @@
 .navLinks {
   display: flex;
   align-items: center;
-  gap: clamp(2.5px, 2vw, 5px);
+  gap: clamp(20px, 5vw, 60px); /* 👈 spaced out more */
   flex: 1;
   justify-content: center;
 }
@@ -57,6 +57,14 @@
   text-decoration: none;
   overflow: visible;       
   transition: color 0.3s ease;
+}
+
+/* Reset link styles for HashLink/Link */
+.navItem,
+.navItem:link,
+.navItem:visited {
+  color: black;
+  text-decoration: none;
 }
 
 .navItem::after {
