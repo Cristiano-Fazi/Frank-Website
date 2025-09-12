@@ -8,12 +8,18 @@ import OurTeam from '../../components/Team/team.jsx'
 export default function About(){
     return(
         <div>
+            <div id="top">
             <HomeTop/>
+            </div>
             <HomeDes/>
             <ReviewCarousel/>
             <Carousel/>
+            <div id="services">
             <Services/>
+            </div>
+            <div id="team">
             <OurTeam/>
+            </div>
             
         </div>
     )

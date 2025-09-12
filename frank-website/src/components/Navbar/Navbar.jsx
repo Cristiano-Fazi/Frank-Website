@@ -3,6 +3,7 @@ import styles from './Navbar.module.css';
 import { Link } from 'react-router-dom';
 import logoNoBackground from '/Logo-no-background.png'
 import { useTranslation } from 'react-i18next';
+import { HashLink } from 'react-router-hash-link';
 
 export default function Navbar() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,9 +39,10 @@ export default function Navbar() {
         {/* <button className={styles.navItem}>{t('navbar.about')}</button>
         Link is blue for about us
         and the underlining is different from the other buttons */}
-        <Link to="/about" className={styles.navItem}>{t('navbar.about')}</Link>
-        <button className={styles.navItem}>{t('navbar.services')}</button>
-        <button className={styles.navItem}>{t('navbar.team')}</button>
+        <HashLink smooth to="/about#top" className={styles.navItem}>{t('navbar.about')}</HashLink>
+        <HashLink smooth to="/about#services" className={styles.navItem}>{t('navbar.services')}</HashLink>
+        <HashLink smooth to="/about#team" className={styles.navItem}>{t('navbar.team')}</HashLink>
+        
       </div>
 
       {/* Right: Quote + Language */}
