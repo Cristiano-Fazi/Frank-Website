@@ -4,9 +4,15 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./carousel.module.css";
-import OneCar from "../../assets/OneCar.png";
-import twoCar from "../../assets/twoCar.png";
-import threeCar from "../../assets/threeCar.png";
+
+import Carousel_pic1 from "../../assets/Carousel_pic1.jpg";
+import Carousel_pic2 from "../../assets/Carousel_pic2.jpg";
+import Carousel_pic3 from "../../assets/Carousel_pic3.jpg";
+import Carousel_pic4 from "../../assets/Carousel_pic4.jpg";
+import Carousel_pic5 from "../../assets/Carousel_pic5.jpg";
+import Carousel_pic6 from "../../assets/Carousel_pic6.jpg";
+import Carousel_pic7 from "../../assets/Carousel_pic7.jpg";
+
 
 const NextArrow = ({ onClick }) => (
   <div className={styles.nextArrow} onClick={onClick}>›</div>
@@ -41,9 +47,14 @@ const Carousel = () => {
   return (
     <div className={styles.carouselWrapper}>
       <Slider {...settings}>
-        <div><img src={OneCar} alt="One Car" className={styles.carouselImage} /></div>
-        <div><img src={twoCar} alt="Two Car" className={styles.carouselImage} /></div>
-        <div><img src={threeCar} alt="Three Car" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic1} alt="Carousel picture 1" className={styles.carouselImage} /></div>
+        
+        <div><img src={Carousel_pic3} alt="Carousel picture 3" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic2} alt="Carousel picture 2" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic4} alt="Carousel picture 4" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic5} alt="Carousel picture 5" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic6} alt="Carousel picture 6" className={styles.carouselImage} /></div>
+        <div><img src={Carousel_pic7} alt="Carousel picture 7" className={styles.carouselImage} /></div>
       </Slider>
     </div>
   );

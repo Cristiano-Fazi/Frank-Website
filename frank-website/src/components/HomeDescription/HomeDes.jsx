@@ -1,4 +1,5 @@
-import treePic from "../../assets/tree_cartoon.png";
+
+import us from "../../assets/us.jpg"
 import styles from "./HomeDes.module.css";
 import { useTranslation } from "react-i18next";
 
@@ -15,7 +16,7 @@ export default function homeDes(){
              respectueuses et adaptées à chaque situation. Nous croyons qu'un arbre bien soigné est un arbre en pleine forme, et c'est pourquoi nous offrons des solutions sur mesure, en prenant 
              toujours en compte les besoins spécifiques de vos arbres. Change this text to the correct english version once Frank sends it to us.</p>
 
-            <img src={treePic} alt="tree picture" className={styles.des_tree} />
+            <img src={us} alt="who are we" className={styles.des_tree} />
 
             </div>
 
