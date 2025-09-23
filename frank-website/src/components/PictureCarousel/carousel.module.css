@@ -1,11 +1,11 @@
 .carouselWrapper {
-  width: 70%;          
+  width: 60%;          
   margin: 100px auto 60px auto; /* space from top and bottom */
   position: relative;
 }
 
 .carouselImage {
-  width: 80%;         
+  width: 70%;         
   margin: 0 auto;     
   border-radius: 16px;
   object-fit: cover;

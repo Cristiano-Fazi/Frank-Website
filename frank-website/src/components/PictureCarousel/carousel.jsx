@@ -5,13 +5,13 @@ import "slick-carousel/slick/slick-theme.css";
 
 import styles from "./carousel.module.css";
 
-import Carousel_pic1 from "../../assets/Carousel_pic1.jpg";
-import Carousel_pic2 from "../../assets/Carousel_pic2.jpg";
-import Carousel_pic3 from "../../assets/Carousel_pic3.jpg";
-import Carousel_pic4 from "../../assets/Carousel_pic4.jpg";
-import Carousel_pic5 from "../../assets/Carousel_pic5.jpg";
-import Carousel_pic6 from "../../assets/Carousel_pic6.jpg";
-import Carousel_pic7 from "../../assets/Carousel_pic7.jpg";
+import Carousel_pic1 from "../../assets/carousel.jpg";
+import Carousel_pic2 from "../../assets/carousel1.jpg";
+import Carousel_pic3 from "../../assets/carousel2.jpg";
+import Carousel_pic4 from "../../assets/carousel3.jpg";
+import Carousel_pic5 from "../../assets/carousel4.jpg";
+import Carousel_pic6 from "../../assets/carousel5.jpg";
+import Carousel_pic7 from "../../assets/carousel6.jpg";
 
 
 const NextArrow = ({ onClick }) => (
