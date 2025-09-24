@@ -11,6 +11,7 @@ function App() {
       <Navbar/>
       <main className="appContent">
         <Routes>
+          <Route path="/" element={<About/>}/>
           <Route path="/submission" element={<Submission />}/>
           <Route path="/about" element={<About/>}/>
         </Routes>
