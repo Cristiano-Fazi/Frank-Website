@@ -1,0 +1,56 @@
+.homeDescription {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 2rem auto; /* smaller top margin */
+  max-width: 1200px;
+  padding: 0 1.5rem;
+}
+
+.homeDes_title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-bottom: 1rem;   /* less space below */
+  margin-top: 0.5rem;    /* closer to top */
+  font-weight: bold;
+  text-align: center;
+  text-decoration: underline; 
+  text-underline-offset: 6px; /* nicer spacing for underline */
+}
+
+.homeDes_content {
+  display: flex;
+  flex-direction: column; /* default for mobile */
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+.homeDes_text {
+  flex: 1;
+  font-size: clamp(1rem, 2vw, 1.4rem);
+  line-height: 1.6;
+  text-align: left;
+}
+
+.des_tree {
+  flex: 1;
+  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
+
+/* Desktop layout */
+@media screen and (min-width: 768px) {
+  .homeDes_content {
+    flex-direction: row;   /* text left, image right */
+    align-items: center;   /* ✅ vertically center text with image */
+    text-align: left;
+  }
+
+  .homeDes_text {
+    text-align: left;
+  }
+}

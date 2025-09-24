@@ -1,0 +1,64 @@
+.homePage_container {
+  position: relative;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.homeMain_img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.homeMain_text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  padding: 10px 20px;
+  max-width: 100%;   /* take up full width */
+  width: 100%;       /* stretch horizontally */
+  line-height: 1.4;
+  box-sizing: border-box;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+
+.homeMain_text h1 {
+  font-size: clamp(1.8rem, 6vw, 4rem); /* responsive */
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.homeMain_text p {
+  font-size: clamp(1rem, 4vw, 2rem); /* responsive */
+  margin: 0.5rem auto;
+  font-weight: normal;
+  max-width: 90%; /* keep text blocks readable */
+}
+
+/* Larger screens (desktop/laptop) */
+@media screen and (min-width: 1024px) {
+  .homePage_container {
+    width: 100%;
+    height: 80vh; /* big hero section */
+  }
+
+  .homeMain_img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .homeMain_text {
+    max-width: 90%;   /* still spread out but not edge-to-edge */
+    padding: 20px 40px;
+  }
+}

@@ -1,13 +1,13 @@
 {
   "navbar": {
     "services": "Nos Services",
-    "about": "À Propose",
-    "team": "Notre Equipe",
+    "about": "À Propos",
+    "team": "Notre Équipe",
     "quote": "Demander un Devis Gratuit"
   },
   "estimate": {
     "header": "Obtenez une Estimation Gratuite de nos Professionnels de Confiance",
-    "formHeader": "Remplissez le formulaire ci‑dessous et nous vous recontacterons sous 48 heures pour planifier une visite",
+    "formHeader": "Remplissez le formulaire ci-dessous et nous vous recontacterons sous 48 heures pour planifier une visite",
     "subheaderStart": "Notez que ",
     "subheaderMiddle": "aucun prix ne peut être donné par téléphone. ",
     "subheaderEnd": "Nous devons effectuer une visite sur place pour évaluer tous les facteurs.",
@@ -44,5 +44,53 @@
     "insurance": "Assurance de responsabilité civile",
     "SIAQ": "Membre de la SIAQ",
     "champion": "Membre des Championnat des Élagueurs"
+  },
+  "about":{
+    "title": "Arboriste certifié et passionné",
+    "urgent": "Services d'urgence 24h/7",
+    "desTitle": "Qui sommes-nous?"
+  },
+  "service":{
+    "abattage": "Abattage",
+    "deboisement": "Déboisement",
+    "elagage": "Élagage",
+    "essouchage": "Éssouchage",
+    "taille": "Taille de haie",
+    "haubanage": "Haubanage",
+    "desAba": "L'abattage est essentiel quand l'arbre est malade, infesté de parasites ou dangereux. Il évite la propagation de maladies aux autres végétaux et protège les infrastructures.",
+    "desDeb": "Le déboisement est nécessaire pour aménager un terrain, le rendre constructible ou sécuriser une zone.",
+    "desEl": "L'élagage élimine les branches mortes ou malades, réduit les risques de branches dange reuses, améliore l'esthétique de votre jardin et permet un meilleur dégagement de la structure environnante.",
+    "desEss": "L'essouchage élimine la souche en profondeur, prévenant la pourriture et permettant de récupérer l’espace pour de nouveaux aménagements ou plantations. Idéale pour un terrain propre et sain!",
+    "desTaille": "La taille régulière des haies permet de maintenir une forme esthétique et ordonnée, tout en évitant que la haie envahisse les espaces voisins.",
+    "desHaub": "L'haubanage renforce les fourches faibles. En installant des câbles ou tiges métalliques, on prévient les risques de rupture, prolonge la vie de l'arbre et évite un abattage prématuré.",
+    "estimate": "Obtenez un devis pour votre travail entièrement gratuit!"
+  },
+  
+  "reviews": {
+    "1": {
+      "name": "Dan Derzsi",
+      "description": "J’ai eu une très bonne expérience avec Service d'élagage François. Ce que j’apprécie vraiment, ce n’est pas seulement le service mais surtout les connaissances et l’attitude orientée vers les solutions. Frank a réussi à résoudre des problèmes que les autres compagnies n’ont même pas pu approcher. Je recommande fortement Frank !"
+    },
+    "2": {
+      "name": "Robert",
+      "description": "Je l’ai appelé pour un travail dans l’Ouest de l’île et tout, du service à la clientèle à la réalisation du service, était A+ ! Si quelqu’un cherche des services d’abattage d’arbres, C’EST L’HOMME QU’IL VOUS FAUT !!!"
+    },
+    "3": {
+      "name": "Lilliane",
+      "description": "Ils ont coupé et déchiqueté toute ma haie de cèdres. Travail fantastique, tout a été laissé propre. Je suis extrêmement satisfaite. Je recommande fortement cette équipe, très professionnelle."
+    },
+    "4": {
+      "name": "Daniel Ouellet",
+      "description": "Service exceptionnel du début à la fin ! De la visite pour l’estimation initiale jusqu’à l’achèvement des travaux, tout a été fait de manière professionnelle et efficace. François respecte ses engagements, offre un prix juste et un service vraiment impeccable. Je le recommande sans hésitation ! Merci."
+    },
+    "5": {
+      "name": "Tristan Seguin",
+      "description": "François a effectué le travail de manière remarquable et en plus, il a pris le temps de venir jusqu’à notre domicile à St-Donat Laurentides. Je recommande fortement !"
+    }
+  },
+  "team":{
+    "title": "Notre Équipe"
   }
 }
+
+

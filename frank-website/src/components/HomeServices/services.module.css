@@ -1,0 +1,129 @@
+/* Container for all services */
+.servicesContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #D9D9D9;
+  padding: 2rem 1rem;
+}
+
+/* Main title */
+.servicesContainer .title {
+  width: 100%;
+  text-align: center;
+  font-size: 3.2rem;
+  text-decoration: underline;
+  margin-bottom: 2rem;
+}
+
+/* Individual service container */
+.individualServices {
+  position: relative;
+  flex: 1 1 calc(33.33% - 2rem);
+  max-width: 33.33%;
+  margin: 1rem;
+  overflow: hidden;
+}
+
+/* Medium screens: 2 per row */
+@media (max-width: 1024px) {
+  .individualServices {
+    flex: 1 1 calc(50% - 2rem);
+    max-width: 50%;
+  }
+}
+
+/* Small screens: 1 per row */
+@media (max-width: 600px) {
+  .individualServices {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+}
+
+/* Service image */
+.servicesPic {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 300px; /* keeps all images equal on desktop */
+}
+
+/* Overlay for title + description */
+.serviceOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 150px; /* FIXED height for desktop */
+  background: rgba(255, 255, 255, 0.9);
+  padding: 1rem 1.2rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* text starts from the top */
+  align-items: flex-start; /* text aligned left */
+  text-align: left;
+  overflow: hidden;
+}
+
+/* On small screens: overlay adapts to text */
+@media (max-width: 600px) {
+  .serviceOverlay {
+    position: relative; /* no absolute, it flows under image */
+    height: auto; /* adapts to fit text */
+    min-height: 120px; /* still some consistency */
+  }
+}
+
+/* Service title inside overlay */
+.servicesTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0 0 0.4rem 0;
+}
+
+/* Service description inside overlay */
+.servicesDes {
+  font-size: 1rem;
+  text-transform: none; /* keep description normal */
+  line-height: 1.3;
+  margin: 0;
+  overflow-wrap: break-word;
+  text-align: left;
+}
+.linkToSub {
+  margin-top: 2rem;
+  background-color: #8bc34a;
+  color: white;
+  font-size: clamp(1.2rem, 3vw, 1.8rem);
+  padding: 0.8em 1.5em;
+  border: 2px solid #8bc34a;
+  border-radius: 20px; /* more rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  text-align: center;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4rem;
+  transition: all 0.3s ease;
+}
+
+.linkToSub:hover {
+  background-color: white;
+  color: #8bc34a;
+  border: 2px solid #8bc34a;
+  transform: scale(1.05);
+}
+
+@media (max-width: 480px) {
+  .linkToSub {
+    flex-direction: column; 
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    padding: 0.7em 1.5em;
+  }
+}

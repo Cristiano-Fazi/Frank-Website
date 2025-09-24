@@ -44,5 +44,54 @@
     "insurance": "Civil Liability Insurance",
     "SIAQ": "Member of the SIAQ",
     "champion": "Member of the Arborists Championship"
+  },
+  "about":{
+    "title": "Certified and Passionate Arborist",
+    "urgent": "Urgent Services available 24h/7",
+    "desTitle": "Who are we?"
+  }
+  ,
+  "service":{
+    "abattage": "Felling",
+    "deboisement": "Clearing",
+    "elagage": "Pruning",
+    "essouchage": "Stump Removal",
+    "taille": "Hedge Trimming",
+    "haubanage": "Cabling",
+    "desAba": "Tree felling is essential when the tree is diseased, infested with pests, or dangerous. It prevents the spread of disease to other plants and protects infrastructure.",
+    "desDeb": "Deforestation is necessary to develop land, make it buildable, or secure an area.",
+    "desEl": "Pruning removes dead or diseased branches, reduces the risk of dangerous branches, improves the aesthetics of your garden, and allows better clearance of the surrounding structure.",
+    "desEss": "Stump removal eliminates the stump deeply, preventing rot and allowing the space to be used for new landscaping or planting. Ideal for a clean and healthy yard!",
+    "desTaille": "Regular hedge trimming helps maintain an aesthetic and tidy shape, while preventing the hedge from encroaching on neighboring spaces.",
+    "desHaub": "Cabling/Bracing strengthens weak forks. By installing cables or metal rods, it prevents breakage risks, extends the life of the tree, and avoids premature felling.",
+    "estimate": "Get an Estimate for your Job Completely Free!"
+  },
+
+  "reviews": {
+    "1": {
+      "name": "Dan Derzsi",
+      "description": "I had a very pleasant experience with Service d'élagage François. What I really appreciate is not only the service but mostly the knowledge and the solution-oriented attitude. Frank managed to solve problems that the previous companies couldn’t even come close to fix. Definitively recommend Frank!"
+    },
+    "2": {
+      "name": "Robert",
+      "description": "Called him for a job over in the West Island and everything from the customer service to the delivery of his service itself was A+! If anybody is looking for tree removal services THIS IS THE MAN TO GO TO!!!"
+    },
+    "3": {
+      "name": "Lilliane",
+      "description": "They cut and shredded my entire cedar hedge. Fantastic work, everything left clean. I am extremely satisfied. I highly recommend this team, very professional."
+    },
+    "4": {
+      "name": "Daniel Ouellet",
+      "description": "Exceptional service from start to finish! From the initial estimate visit to the completion of the work, everything was done professionally and efficiently. François honors his commitments, offers a fair price, and truly impeccable service. I recommend him without hesitation! Thank you."
+    },
+    "5": {
+      "name": "Tristan Seguin",
+      "description": "François carried out the work really well and what's more, he took the time to come to our home in St-Donat Laurentide. I highly recommend!"
+    }
+  },
+  "team":{
+    "title": "Our Team"
   }
 }
+
+

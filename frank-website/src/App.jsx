@@ -1,6 +1,7 @@
 import './App.css'
 import { Routes, Route } from 'react-router-dom'
 import Submission from './pages/submission/submission'
+import About from './pages/about/aboutUs.jsx'
 import Footer from './components/Footer/Footer.jsx' 
 import Navbar from './components/Navbar/Navbar.jsx'
 
@@ -10,7 +11,8 @@ function App() {
       <Navbar/>
       <main className="appContent">
         <Routes>
-          <Route path="/services" element={<Submission />}/>
+          <Route path="/submission" element={<Submission />}/>
+          <Route path="/about" element={<About/>}/>
         </Routes>
       </main>
       <Footer/>

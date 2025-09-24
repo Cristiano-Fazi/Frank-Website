@@ -1,0 +1,76 @@
+.carouselWrapper {
+  width: 60%;          
+  margin: 100px auto 60px auto; /* space from top and bottom */
+  position: relative;
+}
+
+.carouselImage {
+  width: 70%;         
+  margin: 0 auto;     
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+/* Circular arrow styling */
+.nextArrow, .prevArrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #8bc34a;      /* gray fill */
+  color: white;             /* arrow color */
+  width: 50px;              
+  height: 50px;             
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 28px;          /* arrow size */
+  font-weight: bold;        /* thicker arrow */
+  border-radius: 50%;       /* circle shape */
+  border: 2px solid white;  /* white outline */
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* optional shadow */
+  transition: transform 0.2s ease; /* hover effect */
+}
+
+/* Hover effect */
+.nextArrow:hover, .prevArrow:hover {
+  transform: translateY(-50%) scale(1.1); /* slightly bigger */
+}
+
+/* Position arrows on each side */
+.nextArrow {
+  right: -25px;        
+}
+
+.prevArrow {
+  left: -25px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carouselWrapper {
+    width: 95%;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  .carouselImage {
+    width: 90%;        
+  }
+
+  .nextArrow, .prevArrow {
+    width: 40px;
+    height: 40px;
+    font-size: 22px;    /* arrow size smaller on mobile */
+  }
+
+  .nextArrow {
+    right: 10px;
+  }
+
+  .prevArrow {
+    left: 10px;
+  }
+}
+
