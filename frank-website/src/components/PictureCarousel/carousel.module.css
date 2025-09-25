@@ -1,6 +1,6 @@
 .carouselWrapper {
   width: 60%;          
-  margin: 100px auto 60px auto; /* space from top and bottom */
+  margin: 100px auto 60px auto;
   position: relative;
 }
 
@@ -11,34 +11,39 @@
   object-fit: cover;
 }
 
-/* Circular arrow styling */
 .nextArrow, .prevArrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  background: #8bc34a;      /* gray fill */
-  color: white;             /* arrow color */
-  width: 50px;              
-  height: 50px;             
+  background: #8bc34a;
+  color: white;
+  width: 50px;
+  height: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  font-size: 28px;          /* arrow size */
-  font-weight: bold;        /* thicker arrow */
-  border-radius: 50%;       /* circle shape */
-  border: 2px solid white;  /* white outline */
+  font-size: 30px;
+  font-weight: bold;
+  border-radius: 50%;
+  border: 2px solid white;
   z-index: 10;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.3); /* optional shadow */
-  transition: transform 0.2s ease; /* hover effect */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  transition: transform 0.2s ease;
 }
 
-/* Hover effect */
+.nextArrow .arrow,
+.prevArrow .arrow {
+  display: inline-block;
+  position: relative;
+  top: -4px;
+  line-height: 1;
+}
+
 .nextArrow:hover, .prevArrow:hover {
-  transform: translateY(-50%) scale(1.1); /* slightly bigger */
+  transform: translateY(-50%) scale(1.1);
 }
 
-/* Position arrows on each side */
 .nextArrow {
   right: -25px;        
 }
@@ -47,7 +52,6 @@
   left: -25px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
   .carouselWrapper {
     width: 95%;
@@ -62,7 +66,16 @@
   .nextArrow, .prevArrow {
     width: 40px;
     height: 40px;
-    font-size: 22px;    /* arrow size smaller on mobile */
+    font-size: 25px;
+    vertical-align: middle;
+  }
+
+  .nextArrow .arrow,
+  .prevArrow .arrow {
+    display: inline-block;
+    position: relative;
+    top: -2.5px;
+    line-height: 1;
   }
 
   .nextArrow {
@@ -73,4 +86,3 @@
     left: 10px;
   }
 }
-

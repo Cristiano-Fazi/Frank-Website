@@ -19,8 +19,6 @@ export default function homeDes(){
             <img src={us} alt="who are we" className={styles.des_tree} />
 
             </div>
-
         </div>
-
     )
 }

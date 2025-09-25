@@ -36,7 +36,7 @@
   align-items: center;
   text-align: center;
   box-sizing: border-box;
-  min-height: 220x;      /* minimum height */
+  min-height: 220x;
 }
 
 /* Profile picture */
@@ -75,7 +75,7 @@
   color: #555;
   margin-top: 6px;
   line-height: 1.2;
-  word-wrap: break-word; /* wrap long words */
+  word-wrap: break-word;
 }
 
 /* Custom Arrows */
@@ -101,7 +101,6 @@
   right: 5px;
 }
 
-/* Responsive adjustments */
 @media (max-width: 1024px) {
   .reviewCard {
     max-width: 200px;

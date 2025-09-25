@@ -33,16 +33,10 @@ export default function Navbar() {
       </div>
 
       {/* Center: Nav Items */}
-      <div
-        className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}
-      >
-        {/* <button className={styles.navItem}>{t('navbar.about')}</button>
-        Link is blue for about us
-        and the underlining is different from the other buttons */}
+      <div className={`${styles.navLinks} ${isMobileMenuOpen ? styles.showMobileMenu : ''}`}>
         <HashLink smooth to="/about#top" className={styles.navItem}>{t('navbar.about')}</HashLink>
         <HashLink smooth to="/about#services" className={styles.navItem}>{t('navbar.services')}</HashLink>
         <HashLink smooth to="/about#team" className={styles.navItem}>{t('navbar.team')}</HashLink>
-        
       </div>
 
       {/* Right: Quote + Language */}

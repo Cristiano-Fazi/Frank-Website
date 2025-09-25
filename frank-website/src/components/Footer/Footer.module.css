@@ -149,7 +149,7 @@
   transform: scaleX(1);
 }
 
-/* I do NOT like this solution to the gap problem but it's been an hour and im tired */
+/* I do NOT like this solution to the gap problem, take a look and try to find a better solution later */
 @media (max-width: 1600px){
     .upper_footer {
         gap: clamp(0rem, 8vw, 20rem);

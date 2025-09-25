@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -13,13 +12,12 @@ import Carousel_pic5 from "../../assets/carousel4.jpg";
 import Carousel_pic6 from "../../assets/carousel5.jpg";
 import Carousel_pic7 from "../../assets/carousel6.jpg";
 
-
 const NextArrow = ({ onClick }) => (
-  <div className={styles.nextArrow} onClick={onClick}>›</div>
+  <div className={styles.nextArrow} onClick={onClick}><span className={styles.arrow}>›</span></div>
 );
 
 const PrevArrow = ({ onClick }) => (
-  <div className={styles.prevArrow} onClick={onClick}>‹</div>
+  <div className={styles.prevArrow} onClick={onClick}><span className={styles.arrow}>‹</span></div>
 );
 
 const Carousel = () => {
@@ -48,7 +46,6 @@ const Carousel = () => {
     <div className={styles.carouselWrapper}>
       <Slider {...settings}>
         <div><img src={Carousel_pic1} alt="Carousel picture 1" className={styles.carouselImage} /></div>
-        
         <div><img src={Carousel_pic3} alt="Carousel picture 3" className={styles.carouselImage} /></div>
         <div><img src={Carousel_pic2} alt="Carousel picture 2" className={styles.carouselImage} /></div>
         <div><img src={Carousel_pic4} alt="Carousel picture 4" className={styles.carouselImage} /></div>
