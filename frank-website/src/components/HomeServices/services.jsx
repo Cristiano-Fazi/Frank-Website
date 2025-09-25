@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 import prunning from "../../assets/prunning.jpg"
 import cabling from "../../assets/cabling.jpg"
 import hedging from "../../assets/hedging.jpg"
-import stumpRemoval from "../../assets/stumpRemoval.jpg"
+import stumpRemoval from "../../assets/stumpRemoval.png"
 import felling from "../../assets/felling.jpg"
 import clearing from "../../assets/Clearing.jpg"
 
@@ -54,7 +54,7 @@ export default function services(){
             </div>
             <div className={styles.individualServices}>
                 <img src={hedging} alt="hedging picture" className={styles.servicesPic}/>
-                <div className={styles.serviceOverlay}>div
+                <div className={styles.serviceOverlay}>
                     <h2 className={styles.servicesTitle}>{t("service.taille")}</h2>
                     <p className={styles.servicesDes}>{t("service.desTaille")}</p>
                 </div>
