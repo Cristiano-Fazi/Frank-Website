@@ -30,7 +30,7 @@ export default function Footer() {
                     </div>
                     <div className={styles.contact_item}>
                         <FaFacebookF className={styles.contact_icon}/>
-                        <a href="https://www.facebook.com/profile.php?id=100006892575157"
+                        <a href="https://www.facebook.com/profile.php?id=100076406837580"
                         target="_blank"
                         rel="noopener noreferrer"
                         className={styles.contact_link}>
