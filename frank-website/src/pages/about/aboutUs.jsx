@@ -20,7 +20,6 @@ export default function About(){
             <div id="team">
             <OurTeam/>
             </div>
-            
         </div>
     )
 }

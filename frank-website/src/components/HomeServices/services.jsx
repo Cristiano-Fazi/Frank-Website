@@ -11,7 +11,7 @@ import felling from "../../assets/felling.jpg"
 import clearing from "../../assets/Clearing.jpg"
 
 export default function services(){
-    const {t, i18n } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     return(
         <div className={styles.servicesContainer}>
