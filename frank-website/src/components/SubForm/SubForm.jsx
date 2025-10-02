@@ -1,13 +1,17 @@
 import styles from "./SubForm.module.css";
 import { useTranslation } from 'react-i18next';
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 export default function SubForm() {
   const { t, i18n } = useTranslation();
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     // if we've already initialized the Jobber embed once for this page, skip
-    if (window.__jobberEmbedInitialized) return;
+    if (window.__jobberEmbedInitialized) {
+      setLoading(false);
+      return;
+    }
     window.__jobberEmbedInitialized = true;
 
     if (!document.getElementById("jobber-embed-script")) {
@@ -30,9 +34,10 @@ export default function SubForm() {
         </p>
       </div>
 
-      <div id="bc13bacd-391f-4c2d-b807-e5cf55ee3fe7"></div>
-      <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
+      {loading && <div className={styles.spinner}>Loading...</div>}
 
+      <div id="bc13bacd-391f-4c2d-b807-e5cf55ee3fe7"></div>
+        <link rel="stylesheet" href="https://d3ey4dbjkt2f6s.cloudfront.net/assets/external/work_request_embed.css" media="screen" />
       </div>
   );
 }
